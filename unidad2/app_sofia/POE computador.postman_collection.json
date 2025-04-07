@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "b908b15a-3e24-4908-9e87-a0fbc96aaf7e",
+		"name": "POE computador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43479256",
+		"_collection_link": "https://sofiamorenosalas.postman.co/workspace/Sofia-Moreno-Salas's-Workspace~c07ab4dd-6937-4492-8476-ed8e41b98856/collection/43479256-b908b15a-3e24-4908-9e87-a0fbc96aaf7e?action=share&source=collection_link&creator=43479256"
+	},
+	"item": [
+		{
+			"name": "computador",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/computador/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"computador",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "computador 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/computador/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"computador",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "computador 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teclado\": \"Asus\",\r\n    \"mouse\": \"Razer\",\r\n    \"pantalla\": \"Dell\",\r\n    \"software\": \"Linux\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/computador/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"computador",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "computador 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"teclado\": \"HP\",\r\n  \"mouse\": \"Genius\",\r\n  \"pantalla\": \"Samsung Curvo\",\r\n  \"software\": \"Linux\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/computador/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"computador",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
