@@ -1,7 +1,7 @@
-from rest_framework.routers import DefaultRouter
-from .views import MaterialViewSet
+from django.urls import path
+from biblioteca_app import views
 
-router = DefaultRouter()
-router.register(r'materiales', MaterialViewSet, basename='material')
+urlpatterns = [
+    path('biblioteca/', views),  # Solo para probar que responde algo
+]
 
-urlpatterns = router.urls

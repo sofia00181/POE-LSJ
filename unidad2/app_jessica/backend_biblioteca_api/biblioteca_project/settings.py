@@ -15,6 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'biblioteca_app',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -24,7 +25,11 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORINGINS = True
 
 ROOT_URLCONF = 'biblioteca_project.urls'
 
